@@ -2,9 +2,9 @@
 Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refund (PayPal Akun Bisnis)
 
 ## Tutorial Mendapatkan ID dan Signature
-- Silahkan daftar akun paypal bisnis terlebih dahulu [Daftar PayPal Bisnis Gratis!](https://ww.paypal.com)
+- Silahkan daftar akun paypal bisnis terlebih dahulu [Daftar PayPal Bisnis Gratis!](https://www.paypal.com)
 
-- Buka [Dashboard!](https://www.paypal.com/mep/dashboard) anda, silahkan pilih menu Alat -> Semua Alat (Tools -> All Tools), atau Klik [Disini!](https://www.paypal.com/merchantapps/myapps);
+- Buka [Dashboard](https://www.paypal.com/mep/dashboard) anda, silahkan pilih menu Alat -> Semua Alat (Tools -> All Tools), atau Klik [Disini!](https://www.paypal.com/merchantapps/myapps);
 
 - Pada kolom pencarian silahkan cari "API Credential", lalu klik "Buka"  <br /> <br />
 ![Screenshot](ss1.PNG) <br /><br />
@@ -39,7 +39,7 @@ Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refun
   
  ### PHP Native
  
-  define("BASEPATH", dirname(__FILE__)); <br />
+  define("BASEPATH", dirname(__ FILE__)); <br />
   require("Paypal.php"); <br />
   
   $data = array('user' => USER, 'pwd' => PASSWORD, 'signature' => SIGNATURE); <br />
