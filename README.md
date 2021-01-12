@@ -28,7 +28,7 @@ Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refun
   #### Cek Mutasi :
   Gunakan strtotime untuk menentukan rentang waktu dari sekarang <br />
   $start_date = strtotime("now"); //cek mutasi hari ini <br />
-  $start_date = strtotime("-7days"); //cek mutasi seminggu yg lalu sd sekarang <br />
+  $start_date = strtotime("-7days"); //cek mutasi seminggu yg lalu s/d sekarang <br />
   
   $cek = $this->paypal->mutasi($start_date); <br />
   print_r($cek); <br />
@@ -39,6 +39,7 @@ Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refun
   
  ### PHP Native
  
+  define("BASEPATH", dirname(__FILE__)); <br />
   require("Paypal.php"); <br />
   
   $data = array('user' => USER, 'pwd' => PASSWORD, 'signature' => SIGNATURE); <br />
@@ -46,7 +47,7 @@ Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refun
   $paypal = new Paypal($data); <br />
   
   $start_date = strtotime("now"); //cek mutasi hari ini <br />
-  $start_date = strtotime("-7days"); //cek mutasi seminggu yg lalu sd sekarang <br />
+  $start_date = strtotime("-7days"); //cek mutasi seminggu yg lalu s/d sekarang <br />
   
   $cek = $paypal->mutasi($start_date); <br />
   print_r($cek); <br />
