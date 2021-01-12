@@ -6,14 +6,14 @@ Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refun
 
 - Buka [Dashboard!](https://www.paypal.com/mep/dashboard) anda, silahkan pilih menu Alat -> Semua Alat (Tools -> All Tools), atau Klik [Disini!](https://www.paypal.com/merchantapps/myapps);
 
-- Pada kolom pencarian silahkan cari "API Credential", lalu klik "Buka"
-![Screenshot](ss1.png)
-- Scroll ke bawah sampai anda menemukan "Integrasi NVP/SOAP API (Klasik)", lalu klik "Kelola kredensial API"
-![Screenshot](ss2.png)
-- Pilih opsi "Minta Tanda Tangan API" dan klik "Setuju dan Lanjutkan"
-![Screenshot](ss3.png)
-- Silahkan copy Nama Pengguna API (user) , Sandi API (pwd) , dan Tanda Tangan (signature)
-![Screenshot](ss4.png)
+- Pada kolom pencarian silahkan cari "API Credential", lalu klik "Buka"  <br />
+![Screenshot](ss1.PNG)
+- Scroll ke bawah sampai anda menemukan "Integrasi NVP/SOAP API (Klasik)", lalu klik "Kelola kredensial API" <br />
+![Screenshot](ss2.PNG)
+- Pilih opsi "Minta Tanda Tangan API" dan klik "Setuju dan Lanjutkan" <br />
+![Screenshot](ss3.PNG)
+- Silahkan copy Nama Pengguna API (user) , Sandi API (pwd) , dan Tanda Tangan (signature) <br />
+![Screenshot](ss4.PNG)
 
 
 
@@ -26,32 +26,32 @@ Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refun
   silahkan ganti menggunakan data anda
   
   #### Cek Mutasi :
-  Gunakan strtotime untuk menentukan rentang waktu dari sekarang
-  $start_date = strtotime("now"); //cek mutasi hari ini 
-  $start_date = strtotime("-7days"); //cek mutasi seminggu yg lalu sd sekarang
+  Gunakan strtotime untuk menentukan rentang waktu dari sekarang <br />
+  $start_date = strtotime("now"); //cek mutasi hari ini <br />
+  $start_date = strtotime("-7days"); //cek mutasi seminggu yg lalu sd sekarang <br />
   
-  $cek = $this->paypal->mutasi($start_date);
-  print_r($cek);
+  $cek = $this->paypal->mutasi($start_date); <br />
+  print_r($cek); <br />
   
   #### Refund Pembayaran :
-  $refund = $this->paypal->refund($L_TRANSACTIONID, $PAYERID, $catatan);
-  L_TRANSACTIONID dan PAYERID bisa anda dapatkan di fungsi mutasi, tambahkan catatan / note jika diperlukan
+  $refund = $this->paypal->refund($L_TRANSACTIONID, $PAYERID, $catatan); <br />
+  L_TRANSACTIONID dan PAYERID bisa anda dapatkan di fungsi mutasi, tambahkan catatan / note jika diperlukan <br />
   
  ### PHP Native
  
-  require("Paypal.php");
+  require("Paypal.php"); <br />
   
-  $data = array('user' => USER, 'pwd' => PASSWORD, 'signature' => SIGNATURE);
-  silahkan ganti menggunakan data anda
-  $paypal = new Paypal($data);
+  $data = array('user' => USER, 'pwd' => PASSWORD, 'signature' => SIGNATURE); <br />
+  silahkan ganti menggunakan data anda <br />
+  $paypal = new Paypal($data); <br />
   
-  $start_date = strtotime("now"); //cek mutasi hari ini
-  $start_date = strtotime("-7days"); //cek mutasi seminggu yg lalu sd sekarang
+  $start_date = strtotime("now"); //cek mutasi hari ini <br />
+  $start_date = strtotime("-7days"); //cek mutasi seminggu yg lalu sd sekarang <br />
   
-  $cek = $paypal->mutasi($start_date);
-  print_r($cek);
+  $cek = $paypal->mutasi($start_date); <br />
+  print_r($cek); <br />
   
-  Refund Pembayaran :
+  Refund Pembayaran : <br />
   $refund = $paypal->refund($L_TRANSACTIONID, $PAYERID, $catatan);
   
   
