@@ -6,24 +6,24 @@ Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refun
 
 - Buka [Dashboard!](https://www.paypal.com/mep/dashboard) anda, silahkan pilih menu Alat -> Semua Alat (Tools -> All Tools), atau Klik [Disini!](https://www.paypal.com/merchantapps/myapps);
 
-- Pada kolom pencarian silahkan cari "API Credential", lalu klik "Buka"  <br />
-![Screenshot](ss1.PNG)
-- Scroll ke bawah sampai anda menemukan "Integrasi NVP/SOAP API (Klasik)", lalu klik "Kelola kredensial API" <br />
-![Screenshot](ss2.PNG)
-- Pilih opsi "Minta Tanda Tangan API" dan klik "Setuju dan Lanjutkan" <br />
-![Screenshot](ss3.PNG)
-- Silahkan copy Nama Pengguna API (user) , Sandi API (pwd) , dan Tanda Tangan (signature) <br />
-![Screenshot](ss4.PNG)
+- Pada kolom pencarian silahkan cari "API Credential", lalu klik "Buka"  <br /> <br />
+![Screenshot](ss1.PNG) <br /><br />
+- Scroll ke bawah sampai anda menemukan "Integrasi NVP/SOAP API (Klasik)", lalu klik "Kelola kredensial API" <br /><br />
+![Screenshot](ss2.PNG) <br /><br />
+- Pilih opsi "Minta Tanda Tangan API" dan klik "Setuju dan Lanjutkan" <br /><br />
+![Screenshot](ss3.PNG) <br /><br />
+- Silahkan copy Nama Pengguna API (user) , Sandi API (pwd) , dan Tanda Tangan (signature) <br /><br />
+![Screenshot](ss4.PNG) <br /><br />
 
 
 
 ## Tutorial Penggunaan Library
 
 ### CodeIgniter
-  Silahkan Copy Paypal.php ke directory library
-  Pemanggilan library :
-  $this->load->library('paypal', ['user' => USER, 'pwd' => PASSWORD, 'signature' => SIGNATURE]);
-  silahkan ganti menggunakan data anda
+  Silahkan Copy Paypal.php ke directory library <br />
+  Pemanggilan library : <br />
+  $this->load->library('paypal', ['user' => USER, 'pwd' => PASSWORD, 'signature' => SIGNATURE]); <br />
+  silahkan ganti menggunakan data anda <br />
   
   #### Cek Mutasi :
   Gunakan strtotime untuk menentukan rentang waktu dari sekarang <br />
