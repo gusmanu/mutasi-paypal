@@ -1,5 +1,6 @@
 # mutasi-paypal
 Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refund (PayPal Akun Bisnis)
+### PROMOSI ! Beli pulsa paypal mudah dan cepat di [napulsa.com](https://napulsa.com);
 
 ## Tutorial Mendapatkan ID dan Signature
 - Silahkan daftar akun paypal bisnis terlebih dahulu [Daftar PayPal Bisnis Gratis!](https://www.paypal.com)
