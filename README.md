@@ -1,11 +1,11 @@
 # mutasi-paypal
 Library CodeIgniter / Native untuk mengambil data mutasi paypal dan proses refund (PayPal Akun Bisnis)
-### PROMOSI ! Beli pulsa paypal mudah dan cepat di [napulsa.com](https://napulsa.com);
+### PROMOSI ! Beli pulsa paypal mudah dan cepat di [napulsa.com](https://napulsa.com)
 
 ## Tutorial Mendapatkan ID dan Signature
 - Silahkan daftar akun paypal bisnis terlebih dahulu [Daftar PayPal Bisnis Gratis!](https://www.paypal.com)
 
-- Buka [Dashboard](https://www.paypal.com/mep/dashboard) anda, silahkan pilih menu Alat -> Semua Alat (Tools -> All Tools), atau Klik [Disini!](https://www.paypal.com/merchantapps/myapps);
+- Buka [Dashboard](https://www.paypal.com/mep/dashboard) anda, silahkan pilih menu Alat -> Semua Alat (Tools -> All Tools), atau Klik [Disini!](https://www.paypal.com/merchantapps/myapps)
 
 - Pada kolom pencarian silahkan cari "API Credential", lalu klik "Buka"  <br /> <br />
 ![Screenshot](ss1.PNG) <br /><br />
